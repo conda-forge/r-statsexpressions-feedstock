@@ -24,7 +24,7 @@ requirements:
   build:
     - {{posix}}zip               # [win]
   host:
-    - r-base
+    - r-base >=3.6
     - r-bayesfactor >=0.9.12_4.2
     - r-mcmcpack >=1.4_5
     - r-wrs2 >=1.0_0
@@ -43,7 +43,7 @@ requirements:
     - r-tidyr >=1.0.0
     - r-wrs2 >=1.0_0
   run:
-    - r-base
+    - r-base >=3.6
     - r-bayesfactor >=0.9.12_4.2
     - r-mcmcpack >=1.4_5
     - r-wrs2 >=1.0_0
