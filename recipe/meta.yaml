@@ -35,7 +35,7 @@ requirements:
     - r-metafor >=2.1_0
     - r-metaplus >=0.7_11
     - r-psych >=1.9.12.31
-    - r-purr >=0.3.3
+    - r-purrr >=0.3.3
     - r-rcompanion >=2.3.21
     - r-rlang >=0.4.2
     - r-sjstats >=0.17.7
@@ -55,7 +55,7 @@ requirements:
     - r-metafor >=2.1_0
     - r-metaplus >=0.7_11
     - r-psych >=1.9.12.31
-    - r-purr >=0.3.3
+    - r-purrr >=0.3.3
     - r-rcompanion >=2.3.21
     - r-rlang >=0.4.2
     - r-sjstats >=0.17.7
