@@ -24,43 +24,43 @@ requirements:
   build:
     - {{posix}}zip               # [win]
   host:
-    - r-base >=3.6
-    - r-bayesfactor >=0.9.12_4.2
-    - r-mcmcpack >=1.4_5
-    - r-wrs2 >=1.0_0
-    - r-boot >=1.3_22
-    - r-broomextra >=0.0.6
-    - r-crayon >=1.3.4
-    - r-dplyr >=0.8.3
-    - r-ellipsis >=0.2.0.1
-    - r-ez >=4.4_0
-    - r-groupedstats >=0.1.0
-    - r-magrittr >=1.5
-    - r-psych >=1.8.12
-    - r-rcompanion >=2.3.7
-    - r-rlang >=0.4.2
-    - r-tibble >=2.1.3
-    - r-tidyr >=1.0.0
-    - r-wrs2 >=1.0_0
+    - r-base >=3.5
+    - r-bayesfactor
+    - r-boot
+    - r-broomextra >=1.0.1
+    - r-dplyr
+    - r-ez
+    - r-ipmisc >=1.1.0
+    - r-metabma
+    - r-metafor
+    - r-metaplus
+    - r-psych
+    - r-purrr
+    - r-rcompanion
+    - r-rlang
+    - r-sjstats
+    - r-tibble
+    - r-tidyr
+    - r-wrs2
   run:
-    - r-base >=3.6
-    - r-bayesfactor >=0.9.12_4.2
-    - r-mcmcpack >=1.4_5
-    - r-wrs2 >=1.0_0
-    - r-boot >=1.3_22
-    - r-broomextra >=0.0.6
-    - r-crayon >=1.3.4
-    - r-dplyr >=0.8.3
-    - r-ellipsis >=0.2.0.1
-    - r-ez >=4.4_0
-    - r-groupedstats >=0.1.0
-    - r-magrittr >=1.5
-    - r-psych >=1.8.12
-    - r-rcompanion >=2.3.7
-    - r-rlang >=0.4.2
-    - r-tibble >=2.1.3
-    - r-tidyr >=1.0.0
-    - r-wrs2 >=1.0_0
+    - r-base >=3.5
+    - r-bayesfactor
+    - r-boot
+    - r-broomextra >=1.0.1
+    - r-dplyr
+    - r-ez
+    - r-ipmisc >=1.1.0
+    - r-metabma
+    - r-metafor
+    - r-metaplus
+    - r-psych
+    - r-purrr
+    - r-rcompanion
+    - r-rlang
+    - r-sjstats
+    - r-tibble
+    - r-tidyr
+    - r-wrs2
 
 test:
   commands:
