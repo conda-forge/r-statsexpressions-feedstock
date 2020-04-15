@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statsExpressions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statsExpressions/statsExpressions_{{ version }}.tar.gz
-  sha256: 7426517a316123332c7a9bbd3b24c5ca21de5e4458abdd6149b1a4b77cfa5872
+  sha256: 9a19156f4adae3c148593c0020be811bc9cb636dadc86944e255760aaec58417
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -70,12 +70,10 @@ test:
 about:
   home: https://indrajeetpatil.github.io/statsExpressions/, https://github.com/IndrajeetPatil/statsExpressions
   license: GPL-3
-  summary: 'Statistical processing backend for ''ggstatsplot'', this package creates expressions
-    with details from statistical tests. Currently, it supports only the most common
-    types of statistical tests: parametric, nonparametric, robust, and bayesian versions
-    of t-test/anova, correlation analyses, contingency table analysis.'
+  summary: "Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. Currently, it supports only the\
+    \ most common types of statistical tests: parametric, nonparametric, robust, and bayesian versions of t-test/anova, correlation analyses, contingency table analysis."
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
