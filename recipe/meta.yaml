@@ -28,7 +28,7 @@ requirements:
     - r-boot
     - r-broomextra >=3.0.0
     - r-dplyr
-    - r-effectivesize >=0.3.0
+    - r-effectsize >=0.3.0
     - r-ez
     - r-ipmisc >=2.0.0
     - r-metafor
@@ -44,7 +44,7 @@ requirements:
     - r-boot
     - r-broomextra >=3.0.0
     - r-dplyr
-    - r-effectivesize >=0.3.0
+    - r-effectsize >=0.3.0
     - r-ez
     - r-ipmisc >=2.0.0
     - r-metafor
