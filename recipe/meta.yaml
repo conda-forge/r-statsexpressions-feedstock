@@ -24,41 +24,35 @@ requirements:
   build:
     - {{posix}}zip               # [win]
   host:
-    - r-base >=3.5
-    - r-bayesfactor
+    - r-base
     - r-boot
-    - r-broomextra >=1.0.1
+    - r-broomextra >=3.0.0
     - r-dplyr
+    - r-effectivesize >=0.3.0
     - r-ez
-    - r-ipmisc >=1.1.0
-    - r-metabma
+    - r-ipmisc >=2.0.0
     - r-metafor
     - r-metaplus
-    - r-psych
     - r-purrr
     - r-rcompanion
     - r-rlang
-    - r-sjstats
-    - r-tibble
+    - r-tidybf >=0.2.0
     - r-tidyr
     - r-wrs2
   run:
-    - r-base >=3.5
-    - r-bayesfactor
+    - r-base
     - r-boot
-    - r-broomextra >=1.0.1
+    - r-broomextra >=3.0.0
     - r-dplyr
+    - r-effectivesize >=0.3.0
     - r-ez
-    - r-ipmisc >=1.1.0
-    - r-metabma
+    - r-ipmisc >=2.0.0
     - r-metafor
     - r-metaplus
-    - r-psych
     - r-purrr
     - r-rcompanion
     - r-rlang
-    - r-sjstats
-    - r-tibble
+    - r-tidybf >=0.2.0
     - r-tidyr
     - r-wrs2
 
