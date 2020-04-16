@@ -27,6 +27,7 @@ requirements:
     - r-base
     - r-boot
     - r-broomextra >=3.0.0
+    - r-correlation >=0.2.0
     - r-dplyr
     - r-effectsize >=0.3.0
     - r-ez
@@ -43,6 +44,7 @@ requirements:
     - r-base
     - r-boot
     - r-broomextra >=3.0.0
+    - r-correlation >=0.2.0
     - r-dplyr
     - r-effectsize >=0.3.0
     - r-ez
