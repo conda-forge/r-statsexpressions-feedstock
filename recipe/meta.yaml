@@ -14,7 +14,6 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  skip: true  # [r_base == "3.5.1"]
   number: 1
   noarch: generic
   rpaths:
@@ -66,7 +65,7 @@ test:
 
 about:
   home: https://indrajeetpatil.github.io/statsExpressions/, https://github.com/IndrajeetPatil/statsExpressions
-  license: GPL-3
+  license: GPL-3.0-only
   summary: "Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. Currently, it supports only the\
     \ most common types of statistical tests: parametric, nonparametric, robust, and bayesian versions of t-test/anova, correlation analyses, contingency table analysis."
   license_family: GPL3
