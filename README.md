@@ -5,11 +5,9 @@ Home: https://indrajeetpatil.github.io/statsExpressions/, https://github.com/Ind
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-statsexpressions-feedstock/blob/master/LICENSE.txt)
 
 Summary: Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. Currently, it supports only the most common types of statistical tests: parametric, nonparametric, robust, and bayesian versions of t-test/anova, correlation analyses, contingency table analysis.
-
-
 
 Current build status
 ====================
