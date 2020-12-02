@@ -7,7 +7,7 @@ Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-statsexpressions-feedstock/blob/master/LICENSE.txt)
 
-Summary: Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. Currently, it supports only the most common types of statistical tests: parametric, nonparametric, robust, and bayesian versions of t-test/anova, correlation analyses, contingency table analysis.
+Summary: Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. It can additionally return dataframes with these results, which also make these functions a more pipe-friendly way to do statistical analysis. Currently, it supports only the most common types of statistical tests: parametric, nonparametric, robust, and Bayesian versions of t-test/ANOVA, correlation analyses, contingency table analysis, and meta-analysis.
 
 Current build status
 ====================
