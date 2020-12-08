@@ -28,9 +28,8 @@ requirements:
     - r-wrs2
     - r-correlation
     - r-dplyr
-    - r-effectsize
+    - r-effectsize >=0.4.1
     - r-ez
-    - r-insight >=0.11.0
     - r-ipmisc
     - r-metafor
     - r-metaplus
@@ -38,16 +37,15 @@ requirements:
     - r-performance >=0.6.0
     - r-rcompanion
     - r-rlang
-    - r-tidybf
+    - r-tidybf >=0.4.2
     - r-tidyr
   run:
     - r-base
     - r-wrs2
     - r-correlation
     - r-dplyr
-    - r-effectsize
+    - r-effectsize >=0.4.1
     - r-ez
-    - r-insight >=0.11.0
     - r-ipmisc
     - r-metafor
     - r-metaplus
@@ -55,7 +53,7 @@ requirements:
     - r-performance >=0.6.0
     - r-rcompanion
     - r-rlang
-    - r-tidybf
+    - r-tidybf >=0.4.2
     - r-tidyr
 
 test:
