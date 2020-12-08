@@ -1,4 +1,4 @@
-{% set version = '0.6.1' %}
+{% set version = "0.6.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statsExpressions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statsExpressions/statsExpressions_{{ version }}.tar.gz
-  sha256: c4760e0e130a570d54c51409eaeef78a35296c7cafd3b8bfd97b5baa6d7379b8
+  sha256: f5bbf05e357741d7890a830a37fa34349c923f07bf2f44333285cc70993548e7
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -66,15 +66,11 @@ test:
 about:
   home: https://indrajeetpatil.github.io/statsExpressions/, https://github.com/IndrajeetPatil/statsExpressions
   license: GPL-3.0-only
-  summary: 'Statistical processing backend for ''ggstatsplot'', this package creates expressions
-    with details from statistical tests. It can additionally return dataframes with
-    these results, which also make these functions a more pipe-friendly way to do statistical
-    analysis. Currently, it supports only the most common types of statistical tests:
-    parametric, nonparametric, robust, and Bayesian versions of t-test/ANOVA, correlation
-    analyses, contingency table analysis, and meta-analysis.'
+  summary: "Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. It can additionally return dataframes with these results, which also make these functions a more pipe-friendly way to do statistical analysis. Currently, it supports only the most common types\
+    \ of statistical tests: parametric, nonparametric, robust, and Bayesian versions of t-test/ANOVA, correlation analyses, contingency table analysis, and meta-analysis."
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:
