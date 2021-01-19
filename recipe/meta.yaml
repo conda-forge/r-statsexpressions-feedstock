@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statsExpressions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statsExpressions/statsExpressions_{{ version }}.tar.gz
-  sha256: f5bbf05e357741d7890a830a37fa34349c923f07bf2f44333285cc70993548e7
+  sha256: 591105e12a9d5896e247d22003569e393f1ee3c159c0a5ff06e0ceee9527338b
 
 build:
   merge_build_host: true  # [win]
@@ -25,35 +25,37 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-bayesfactor
     - r-wrs2
+    - r-afex
     - r-correlation
     - r-dplyr
-    - r-effectsize >=0.4.1
-    - r-ez
+    - r-effectsize >=0.4.3
+    - r-insight >=0.12.0
     - r-ipmisc
+    - r-metabma
     - r-metafor
     - r-metaplus
-    - r-parameters >=0.10.0
-    - r-performance >=0.6.0
-    - r-rcompanion
+    - r-parameters >=0.11.0
+    - r-performance
     - r-rlang
-    - r-tidybf >=0.4.2
     - r-tidyr
   run:
     - r-base
+    - r-bayesfactor
     - r-wrs2
+    - r-afex
     - r-correlation
     - r-dplyr
-    - r-effectsize >=0.4.1
-    - r-ez
+    - r-effectsize >=0.4.3
+    - r-insight >=0.12.0
     - r-ipmisc
+    - r-metabma
     - r-metafor
     - r-metaplus
-    - r-parameters >=0.10.0
-    - r-performance >=0.6.0
-    - r-rcompanion
+    - r-parameters >=0.11.0
+    - r-performance
     - r-rlang
-    - r-tidybf >=0.4.2
     - r-tidyr
 
 test:
