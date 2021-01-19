@@ -25,35 +25,37 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-bayesfactor
     - r-wrs2
+    - r-afex
     - r-correlation
     - r-dplyr
-    - r-effectsize >=0.4.1
-    - r-ez
+    - r-effectsize >=0.4.3
+    - r-insight >=0.12.0
     - r-ipmisc
+    - r-metabma
     - r-metafor
     - r-metaplus
-    - r-parameters >=0.10.0
-    - r-performance >=0.6.0
-    - r-rcompanion
+    - r-parameters >=0.11.0
+    - r-performance
     - r-rlang
-    - r-tidybf >=0.4.2
     - r-tidyr
   run:
     - r-base
+    - r-bayesfactor
     - r-wrs2
+    - r-afex
     - r-correlation
     - r-dplyr
-    - r-effectsize >=0.4.1
-    - r-ez
+    - r-effectsize >=0.4.3
+    - r-insight >=0.12.0
     - r-ipmisc
+    - r-metabma
     - r-metafor
     - r-metaplus
-    - r-parameters >=0.10.0
-    - r-performance >=0.6.0
-    - r-rcompanion
+    - r-parameters >=0.11.0
+    - r-performance
     - r-rlang
-    - r-tidybf >=0.4.2
     - r-tidyr
 
 test:
