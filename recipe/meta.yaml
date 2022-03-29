@@ -23,40 +23,41 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-bayesfactor
-    - r-wrs2
-    - r-afex
-    - r-correlation
+    - r-bayesfactor >=0.9.12_4.3
+    - r-wrs2 >=1.1_3
+    - r-correlation >=0.8.0
+    - r-datawizard >=0.3.0
     - r-dplyr
-    - r-effectsize >=0.4.3
-    - r-insight >=0.12.0
-    - r-ipmisc
-    - r-metabma
-    - r-metafor
-    - r-metaplus
-    - r-parameters >=0.11.0
-    - r-performance
+    - r-effectsize >=0.6.0.1
+    - r-glue
+    - r-insight >=0.17.0
+    - r-magrittr
+    - r-parameters >=0.17.0
+    - r-performance >=0.8.0
     - r-rlang
+    - r-tibble
     - r-tidyr
+    - r-zeallot
   run:
     - r-base
-    - r-bayesfactor
-    - r-wrs2
-    - r-afex
-    - r-correlation
+    - r-bayesfactor >=0.9.12_4.3
+    - r-wrs2 >=1.1_3
+    - r-correlation >=0.8.0
+    - r-datawizard >=0.3.0
     - r-dplyr
-    - r-effectsize >=0.4.3
-    - r-insight >=0.12.0
-    - r-ipmisc
-    - r-metabma
-    - r-metafor
-    - r-metaplus
-    - r-parameters >=0.11.0
-    - r-performance
+    - r-effectsize >=0.6.0.1
+    - r-glue
+    - r-insight >=0.17.0
+    - r-magrittr
+    - r-parameters >=0.17.0
+    - r-performance >=0.8.0
     - r-rlang
+    - r-tibble
     - r-tidyr
+    - r-zeallot
 
 test:
   commands:
