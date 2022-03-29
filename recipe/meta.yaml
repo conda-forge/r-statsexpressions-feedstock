@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statsExpressions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statsExpressions/statsExpressions_{{ version }}.tar.gz
-  sha256: 94762e1594997448125f2ade3186a09ba809dec3ae8aa02c82395a68093eb44e
+  sha256: 00285224093170cbb223196bf00ca67b1715c4fd09a26c10dafc3114da7e23f0
 
 build:
   merge_build_host: true  # [win]
@@ -23,40 +23,41 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-bayesfactor
-    - r-wrs2
-    - r-afex
-    - r-correlation
+    - r-bayesfactor >=0.9.12_4.3
+    - r-wrs2 >=1.1_3
+    - r-correlation >=0.8.0
+    - r-datawizard >=0.3.0
     - r-dplyr
-    - r-effectsize >=0.4.3
-    - r-insight >=0.12.0
-    - r-ipmisc
-    - r-metabma
-    - r-metafor
-    - r-metaplus
-    - r-parameters >=0.11.0
-    - r-performance
+    - r-effectsize >=0.6.0.1
+    - r-glue
+    - r-insight >=0.17.0
+    - r-magrittr
+    - r-parameters >=0.17.0
+    - r-performance >=0.8.0
     - r-rlang
+    - r-tibble
     - r-tidyr
+    - r-zeallot
   run:
     - r-base
-    - r-bayesfactor
-    - r-wrs2
-    - r-afex
-    - r-correlation
+    - r-bayesfactor >=0.9.12_4.3
+    - r-wrs2 >=1.1_3
+    - r-correlation >=0.8.0
+    - r-datawizard >=0.3.0
     - r-dplyr
-    - r-effectsize >=0.4.3
-    - r-insight >=0.12.0
-    - r-ipmisc
-    - r-metabma
-    - r-metafor
-    - r-metaplus
-    - r-parameters >=0.11.0
-    - r-performance
+    - r-effectsize >=0.6.0.1
+    - r-glue
+    - r-insight >=0.17.0
+    - r-magrittr
+    - r-parameters >=0.17.0
+    - r-performance >=0.8.0
     - r-rlang
+    - r-tibble
     - r-tidyr
+    - r-zeallot
 
 test:
   commands:
