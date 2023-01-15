@@ -1,4 +1,4 @@
-{% set version = "1.3.6" %}
+{% set version = "1.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statsExpressions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statsExpressions/statsExpressions_{{ version }}.tar.gz
-  sha256: 9a20cfc46fa53bfa22d1c9b5b1b5419d77ee9f6d1741a1aa5a227e3bf006d5a3
+  sha256: 365319e7e96fa80d0fad5127dd46a4c749d0eb539d6d29622058bb817047f75a
 
 build:
   merge_build_host: true  # [win]
