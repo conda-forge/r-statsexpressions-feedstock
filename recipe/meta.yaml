@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/statsExpressions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/statsExpressions/statsExpressions_{{ version }}.tar.gz
-  sha256: 16d64ca873692b4270773b1227537db7195f761c758d13337e7e55e6b4c0ff99
+  sha256: a1b8d9bde2ad86cecb2af62aeed74f21c55855ce7d29eeb173e4514e1cd4f61b
 
 build:
   number: 0
