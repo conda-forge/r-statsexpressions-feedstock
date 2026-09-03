@@ -7,7 +7,7 @@ Home: https://indrajeetpatil.github.io/statsExpressions/
 
 Package license: MIT
 
-Summary: Statistical processing backend for 'ggstatsplot', this package creates expressions with details from statistical tests. It can additionally return dataframes with these results, which also make these functions a more pipe-friendly way to do statistical analysis. Currently, it supports only the most common types of statistical tests: parametric, nonparametric, robust, and Bayesian versions of t-test/ANOVA, correlation analyses, contingency table analysis, and meta-analysis.
+Summary: Utilities for producing dataframes with rich details for the most common types of statistical approaches and tests: parametric, nonparametric, robust, and Bayesian t-test, one-way ANOVA, correlation analyses, contingency table analyses, and meta-analyses. The functions are pipe-friendly and provide a consistent syntax to work with tidy data. These dataframes additionally contain expressions with statistical details, and can be used in graphing packages. This package also forms the statistical processing backend for 'ggstatsplot'. References: Patil (2021) <doi:10.21105/joss.03236>.
 
 Development: https://github.com/IndrajeetPatil/statsExpressions
 
